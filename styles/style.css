@@ -129,7 +129,7 @@
 
 .header__accent-title {
   grid-row: 3 / 4;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 #ff0070;
 }
 
 .header__title {
@@ -259,7 +259,7 @@
 }
 
 .footer__accent-title {
-  text-shadow: 3px 3px 0 var(--accent-color);
+  text-shadow: 3px 3px 0 #ff0070;
 }
 
 @media (width > 375px) {

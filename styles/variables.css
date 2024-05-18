@@ -6,8 +6,9 @@
 .page {
   --brand-color: #db00ff;
   --accent-color: #ff0070;
-  --text-color-bright: #f1b2ce;
-  --text-color-dark: #000028;
+  --text-color: #f1b2ce;
+  --title-color: #000028;
+  --background-color: #000028;
 
   --font: "IBM Plex mono";
 
