@@ -9,4 +9,20 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --brand-color: #db00ff;
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --title-color: #000028;
+
+  --font: "IBM Plex mono";
+
+  --background-image: url(../images/cover-image-dark.png);
+}
+
+.theme_dark .header__rec-decor {
+  display: block;
+}
+
+.theme_dark .content-section__title {
+  color: var(--accent-color);
 }
