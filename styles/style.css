@@ -59,6 +59,7 @@
   content: "REC";
   color: var(--accent-color);
   right: 28px;
+  text-transform: uppercase;
 }
 
 .header__rec-decor::after {
@@ -93,13 +94,13 @@
   padding: 3px 13px;
   text-transform: lowercase;
   font-family: var(--font);
-  color: var(--accent-color);
+  color: var(--theme-btn-color);
   line-height: 1;
   text-align: center;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgba(255, 0, 112, 0.4);
+  border: 1px solid var(--theme-btn-hvr-color);
 }
 
 .header__theme-menu-button:focus {
@@ -108,20 +109,16 @@
 
 .header__theme-menu-button:focus-visible {
   outline: none;
-  border-block-end: 1px solid var(--accent-color);
+  border-block-end: 1px solid currentColor;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid currentColor;
   pointer-events: none;
 }
 
-.header__theme-menu-button_active:hover {
-  border: 1px solid var(--accent-color);
-}
-
 .accent-heading {
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: var(--logo-font-size);
   font-weight: bold;
   line-height: 0.82;
   color: var(--brand-color);
@@ -156,15 +153,22 @@
 }
 
 .text-link:focus-visible {
-  outline: 1px solid var(--text-color);
+  outline: 1px solid currentColor;
 }
 
 .text-link:hover {
-  border-block-end: 1px solid var(--text-color);
+  border-block-end: 1px solid currentColor;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 10px;
 }
 
 .content-section__title {
-  color: var(--accent-color);
+  color: var(--title-color);
   font-size: 18px;
   font-weight: bold;
   line-height: calc(23.4 / 18);
@@ -177,16 +181,13 @@
   inline-size: 100%;
 }
 
+h4.content-section__subtitle {
+  font-weight: normal;
+}
+
 .content-section__text {
   color: var(--text-color);
   line-height: calc(23.4 / 18);
-}
-
-.content-section {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 0 10px;
 }
 
 .content-section__wrapper {
@@ -321,6 +322,10 @@
 }
 
 @media (width > 768px) {
+  .page {
+    --logo-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
   .header {
     block-size: max(768px, 100vh);
   }
@@ -329,10 +334,6 @@
     display: flex;
     flex-direction: initial;
     margin-inline-start: 20px;
-  }
-
-  .accent-heading {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
   .header__theme-menu {
