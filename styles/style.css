@@ -130,6 +130,7 @@
 }
 
 .header__title {
+  color: var(--subtitle-color);
   grid-row: 4 / 5;
   font-size: 18px;
   align-self: center;
