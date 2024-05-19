@@ -146,7 +146,7 @@
 }
 
 .text-link {
-  text-shadow: 1px 1px var(--accent-color);
+  text-shadow: 1px 1px var(--title-decor-color);
   cursor: pointer;
 }
 
