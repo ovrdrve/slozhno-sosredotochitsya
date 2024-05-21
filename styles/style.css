@@ -146,12 +146,13 @@
 }
 
 .text-link {
-  text-shadow: 1px 1px var(--title-decor-color);
+  text-shadow: 2px 2px var(--title-decor-color);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .text-link:focus {
-  outline: 1px solid currentColor;
+  outline: none;
 }
 
 .text-link:focus-visible {
@@ -266,6 +267,10 @@ h4.content-section__subtitle {
 }
 
 @media (width >= 768px) {
+  .page {
+    --logo-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
   .header {
     padding: 20px;
     padding-inline-start: 0;
@@ -324,10 +329,6 @@ h4.content-section__subtitle {
 }
 
 @media (width >= 1024px) {
-  .page {
-    --logo-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  }
-
   .header {
     block-size: max(768px, 100vh);
   }
